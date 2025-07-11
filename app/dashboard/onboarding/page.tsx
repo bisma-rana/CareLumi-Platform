@@ -200,7 +200,8 @@ export default function OnboardingPage() {
         <Card className="mb-8">
           <CardHeader>
             <div className="flex items-center gap-3">
-              {steps[currentStep].icon({ className: "h-6 w-6 text-purple-600" })}
+              <steps[currentStep].icon className="h-6 w-6 text-purple-600" />
+
               <div>
                 <CardTitle>{steps[currentStep].title}</CardTitle>
                 <CardDescription>{steps[currentStep].description}</CardDescription>
